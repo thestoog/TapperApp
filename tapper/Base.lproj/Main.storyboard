@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="retrobg" translatesAutoresizingMaskIntoConstraints="NO" id="Gud-Tc-ndg">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="retrobg" translatesAutoresizingMaskIntoConstraints="NO" id="Gud-Tc-ndg">
+                                <rect key="frame" x="-36" y="0.0" width="657" height="621"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tapper" translatesAutoresizingMaskIntoConstraints="NO" id="IxM-nc-Dpo" userLabel="TitleLogo">
                                 <rect key="frame" x="140" y="59" width="320" height="67"/>
@@ -39,7 +39,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How many taps to win?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="671-RN-AaS">
-                                <rect key="frame" x="176" y="335" width="249" height="30"/>
+                                <rect key="frame" x="176" y="335" width="249" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="42y-Zz-kzk"/>
                                     <constraint firstAttribute="width" constant="249" id="xDj-zm-2zQ"/>
@@ -72,18 +72,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="hIi-5I-Qys" firstAttribute="centerX" secondItem="671-RN-AaS" secondAttribute="centerX" id="4bk-vO-LCc"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Gud-Tc-ndg" secondAttribute="bottom" id="6gX-UF-PFa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Gud-Tc-ndg" secondAttribute="bottom" constant="-21" id="6gX-UF-PFa"/>
                             <constraint firstItem="s8K-wR-yb4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ABK-ZN-DHe"/>
-                            <constraint firstAttribute="trailing" secondItem="Gud-Tc-ndg" secondAttribute="trailing" id="Cvw-6n-SgB"/>
+                            <constraint firstAttribute="trailing" secondItem="Gud-Tc-ndg" secondAttribute="trailing" constant="-21" id="Cvw-6n-SgB"/>
                             <constraint firstItem="7TW-vZ-FIo" firstAttribute="top" secondItem="s8K-wR-yb4" secondAttribute="bottom" constant="62" id="UCb-Qp-9jI"/>
-                            <constraint firstItem="Gud-Tc-ndg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Yin-nG-l4w"/>
+                            <constraint firstItem="Gud-Tc-ndg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-36" id="Yin-nG-l4w"/>
                             <constraint firstItem="hIi-5I-Qys" firstAttribute="top" secondItem="671-RN-AaS" secondAttribute="bottom" constant="14" id="aQJ-H4-I84"/>
                             <constraint firstItem="IxM-nc-Dpo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ez2-BP-dzH"/>
                             <constraint firstItem="7TW-vZ-FIo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h4C-Be-HUW"/>
                             <constraint firstItem="s8K-wR-yb4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="18" id="hEF-vQ-eR8"/>
                             <constraint firstItem="hIi-5I-Qys" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kBK-vv-CaH"/>
                             <constraint firstItem="s8K-wR-yb4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rhk-vb-w3a"/>
-                            <constraint firstItem="Gud-Tc-ndg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tWE-XF-Rcs"/>
+                            <constraint firstItem="Gud-Tc-ndg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-24" id="tWE-XF-Rcs"/>
                             <constraint firstItem="IxM-nc-Dpo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="uBF-lM-2z5"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hIi-5I-Qys" secondAttribute="bottom" constant="101" id="whU-3z-vbD"/>
                         </constraints>
