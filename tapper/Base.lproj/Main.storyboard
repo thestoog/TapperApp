@@ -68,17 +68,45 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOYCE! You won Tapper!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Fw-SS-vmL" userLabel="congratsLabel">
+                                <rect key="frame" x="0.0" y="50" width="600" height="179"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="NOk-lp-mme"/>
+                                    <constraint firstAttribute="height" constant="179" id="sGs-Ar-CTn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana-Italic" family="Verdana" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2h-BE-IbL">
+                                <rect key="frame" x="211" y="472" width="179" height="30"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="25"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
+                                <state key="normal" title="PLAY AGAIN">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="onPlayAgainPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XLN-ae-Ww9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="hIi-5I-Qys" firstAttribute="centerX" secondItem="671-RN-AaS" secondAttribute="centerX" id="4bk-vO-LCc"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Gud-Tc-ndg" secondAttribute="bottom" constant="-21" id="6gX-UF-PFa"/>
                             <constraint firstItem="s8K-wR-yb4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ABK-ZN-DHe"/>
+                            <constraint firstItem="B2h-BE-IbL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cll-VN-m7y"/>
                             <constraint firstAttribute="trailing" secondItem="Gud-Tc-ndg" secondAttribute="trailing" constant="-21" id="Cvw-6n-SgB"/>
+                            <constraint firstItem="9Fw-SS-vmL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="TY0-f5-geo"/>
                             <constraint firstItem="7TW-vZ-FIo" firstAttribute="top" secondItem="s8K-wR-yb4" secondAttribute="bottom" constant="62" id="UCb-Qp-9jI"/>
                             <constraint firstItem="Gud-Tc-ndg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-36" id="Yin-nG-l4w"/>
                             <constraint firstItem="hIi-5I-Qys" firstAttribute="top" secondItem="671-RN-AaS" secondAttribute="bottom" constant="14" id="aQJ-H4-I84"/>
+                            <constraint firstItem="9Fw-SS-vmL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eKq-f5-f0t"/>
                             <constraint firstItem="IxM-nc-Dpo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ez2-BP-dzH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="B2h-BE-IbL" secondAttribute="bottom" constant="98" id="gfQ-uI-KwZ"/>
                             <constraint firstItem="7TW-vZ-FIo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h4C-Be-HUW"/>
                             <constraint firstItem="s8K-wR-yb4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="18" id="hEF-vQ-eR8"/>
                             <constraint firstItem="hIi-5I-Qys" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kBK-vv-CaH"/>
@@ -89,7 +117,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="congratsLabel" destination="9Fw-SS-vmL" id="Y35-1z-84M"/>
                         <outlet property="howManyTapsTxt" destination="671-RN-AaS" id="crg-8x-WMM"/>
+                        <outlet property="playAgainButton" destination="B2h-BE-IbL" id="Woy-6I-sTN"/>
                         <outlet property="playButton" destination="hIi-5I-Qys" id="Ezy-6a-ZZm"/>
                         <outlet property="tapButton" destination="s8K-wR-yb4" id="Sa1-s4-obV"/>
                         <outlet property="tapsLabel" destination="7TW-vZ-FIo" id="Cuw-Yi-Djx"/>
